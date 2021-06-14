@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles/styles.css' />
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div id='main-nav'>
+            <!-- Reminder remove width when doing CSS -->
+            <img src='https://lh3.googleusercontent.com/pw/ACtC-3eIqVxE2cE5ufMMlFgFkGISyR0B6aftUGPcePnTNqZ0TKsks2AY1nCnm7lqPRNhGE9gRi7m_or3hXRZX8mtgN_acOp0qPDiuJ5FQ2op6JULdKXJotWBgbmsYwAcC4eocXXguT7n4NR3AKZeKAFuTOs_=w1005-h917-no?authuser=0' alt='scoop of joy' id='logo'
+            />
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Recipes</a></li>
+                <li><a href='#author'>Contact</a></li>
+            </ul>
+        </div>
+        <!-- page navigation -->
+        <ul id='secondary-nav'>
+            <li><a href='#intro'>About</a></li>
+            <li><a href='#ingredients'>Ingredients</a></li>
+            <li><a href='#instructions'>Instructions</a></li>
+            <li><a href='#questions'>F.A.Q</a></li>
+        </ul>
+    </nav>
+
+    <!--Main Section-->
+    <main>
+        <!--Intro section-->
+        <section id='intro' class='lavender'>
+            <!--div will contain background image-->
+            <div class='background' id='intro-title'>
+                <h1>
+                    Lavender Ice Cream Recipe
+                </h1>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non. Fusce mollis sapien turpis, at cursus dui hendrerit ut. Sed rutrum sit amet enim vitae
+                dapibus. Duis eget ipsum quis felis accumsan sollicitudin at eu ligula. Donec vitae mollis magna.
+                <br/><br/> Nunc non mauris erat. Nullam sagittis libero id erat semper volutpat. Sed euismod orci ante, eget dapibus lectus volutpat eu. Maecenas feugiat, quam vitae sollicitudin convallis, nisl tortor ornare massa, et porttitor ligula
+                libero sit amet lacus. Quisque feugiat diam ut arcu sagittis ullamcorper. Nullam rhoncus, odio ut tincidunt ullamcorper, elit ipsum faucibus nulla, ut elementum dolor lacus nec quam. Fusce semper massa odio. Duis pretium, odio in mattis
+                rhoncus, diam est fringilla risus, sit amet venenatis libero libero eu augue.
+            </p>
+        </section>
+        <!--Ingredients Sextion-->
+        <section id='ingredients'>
+            <h2>
+                Ingredients
+            </h2>
+            <!--time and servings info-->
+            <div>
+                <p><span>Prep Time:</span> 40 minutes</p>
+                <p><span>Chill Time:</span> 6 hours</p>
+                <label>Servings: </label>
+                <input id='servings' type='number' value=4 min=1 max=10/>
+            </div>
+            <ul>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no?authuser=0' alt='egg icon' />
+                    <input id='infusedHeavyCream' type='number' value=0.67 />
+                    <label> cup of heavy cream for infusing lavender</label>
+                </li>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no' alt='egg icon' />
+                    <input id='lavender' type='number' value=3 />
+                    <label> tbsp culinary lavender</label>
+                </li>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no' alt='egg icon' />
+                    <input id='milk' type='number' value=14 />
+                    <label> oz. sweetened condensed milk</label>
+                </li>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no' alt='egg icon' />
+                    <input id='salt' type='number' value=0.125 />
+                    <label> tsp salt</label>
+                </li>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no' alt='egg icon' />
+                    <input id='extract' type='number' value=1 />
+                    <label> tsp vanilla extract</label>
+                </li>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no' alt='egg icon' />
+                    <input id='heavycream' type='number' value=2.5 />
+                    <label> cup of heavy cream</label>
+                </li>
+                <li>
+                    <img src='https://lh3.googleusercontent.com/pw/ACtC-3d7ps-RHKBzcGUxP96SroT7NyAYcEBjohv7m_5NcHhIFXFk4MffBI898HjIWom-r7v2oteQUs6V55BueFlw5AbBogLbsmJrfoLNBgvCFtkqjJoxzKyzD5tgqDF2WokWrRBw2V7HcnwS9-zrHH5YMu1V=w30-h24-no' alt='egg icon' />
+                    <label> purple gel food coloring</label>
+                </li>
+            </ul>
+        </section>
+        <!--empty div for parallax-->
+        <div class='background' id='lavenderField'></div>
+        <!-- Instruction section-->
+        <section id='instructions'>
+            <h2>Instructions</h2>
+            <!-- div used to make video responsive vertically -->
+            <div id='video'>
+                <iframe src="https://www.youtube.com/embed/ICh4N3COYhw?start=170" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Step 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+            <h3>Step 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+            <h3>Step 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+            <h3>Step 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+        </section>
+        <!-- questions -->
+        <section id='questions' class='lavender'>
+            <h2>Frequently Asked Questions</h2>
+            <!-- little box containing question and answer-->
+            <div>
+                <button id='first'>+ Why lavender?</button>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+                </div>
+            </div>
+            <div>
+                <button id='second'>+ Will it taste like soap?</button>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+                </div>
+            </div>
+            <div>
+                <button id='third'>+ How easy is this recipe?</button>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.</p>
+                </div>
+            </div>
+        </section>
+        <!-- gallery section-->
+        <section id='gallery'>
+            <img src='https://lh3.googleusercontent.com/pw/ACtC-3e3XPkuxBQvWkGcUbi8o1BEsbURCCLA7SW64I4t35wR-vlRU_WKtdL3zuC7aB3cJIEGyVSFPCcWpmdFK0sFgcp4KPs9ix71CfG5ezhTLmTgTVzy0mMEC4SXKc7nbCPlZHpREAf_Tj9o4oDdEqcTBuYn=w670-h1005-no?authuser=0' alt='gallery1' />
+            <img src='https://lh3.googleusercontent.com/pw/ACtC-3dkpvO-GAONJT2NB8BPB60XGH75n4E_E9ARLYX_XzqzRgUhYB-2PM94HhOe4lIYoNGCi8er7uiCRVC2FMU8x1zbPxdkKlrHc6eqsKfuTAhQhwTgzSjSXQXyF97gJ_VpTsH1w2Bl3Shy1jKLlj1rxYq4=w804-h1005-no?authuser=0' alt='gallery2' />
+            <img src='https://lh3.googleusercontent.com/pw/ACtC-3e26GY0mIW6NP3AHoSUgcnad468MDfTfCWiCjqXOU4G3Suwrdm9ATDbOZIqdgbUGsYikeVZiqBMsT5yqm2SwNkSWHJKNz9zFOC9HazwujCE9tR0ANwyUtTwT5-wE_TJrTxx7TgpMMLJ6MEXD40d_vqD=w1508-h1005-no?authuser=0' alt='gallery3' />
+            <img src='https://lh3.googleusercontent.com/pw/ACtC-3eURr0cSS72zTr0evDEJZ2SyvX0xiSjUelweAXA2JBu_t_0hkA96a2VkLkyO_irjZa2C7yGeFB9lrj4a8lj6ERAuO25SwbSl7ATObWqWoqcQdmfy-pKdsvTDZFg0Txg5ORLincDgdNK-0Pm8oh4JBeB=s1005-no?authuser=0' alt='gallery4' />
+        </section>
+    </main>
+    <!-- aside section-->
+    <aside class='lavender' id='author'>
+        <img src='https://lh3.googleusercontent.com/pw/ACtC-3cSHQ61BZ3Sm5CNWuV13O_a36OvEOHevTqqqQUKJUYVzJ7nxSXCunSXaFRprlyhzbxnb-8gSabatxl_DNQ6MXTpJxZXy89XxxMcCmlIHE5wjbjrNXNnR4NNAVS2DZqgOthWtUEvVZG8nV6FrRMQ7Kgz=w1508-h1006-no?authuser=0' alt='Joy' />
+        <h3>About Joy</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pulvinar leo vel enim sollicitudin rhoncus. Proin laoreet enim purus, vel pretium eros vulputate non.<br/><br/>
+            <span>Questions?</span> Contact me at <a href='mailto:joy@example.com'>joy@example.com</a></p>
+    </aside>
+
+</body>
+
+</html>
